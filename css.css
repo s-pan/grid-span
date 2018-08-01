@@ -341,14 +341,14 @@ template {
 }
 
 body {
-   background-color: #f1f1f1;
+   background-color: #f2e2dd;
    height:100%;
   font-family: 'Helvetica', 'Verdana', 'Arial';
 }
 
 .header{
    padding: 2rem 0;
-   background-color: #000;
+   background-color: #426c79;
    color: #f1f1f1
 }
 
