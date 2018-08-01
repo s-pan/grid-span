@@ -346,6 +346,11 @@ body {
   font-family: 'Roboto', 'Helvetica', 'Verdana', 'Arial';
 }
 
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
 .header{
    padding: 5rem 0;
    background-color: #426c79;
@@ -355,6 +360,10 @@ body {
 .h1 {
   display: inline-block;
    font-size: 2rem;
+}
+
+.jumbo{
+  font-size: 5rem;
 }
 
 .h1--center, .h2--center, .h4--center {
@@ -387,5 +396,6 @@ body {
 
 .btn--ghost{
   background: inherit;
-  border: 1px solid #f1f1f1
+  border: 1px solid #f1f1f1;
+  color: #f1f1f1;
 }
