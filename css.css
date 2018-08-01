@@ -347,6 +347,7 @@ body {
 }
 
 .header{
+   padding: 2rem 0;
    background-color: #000;
    color: #f1f1f1
 }
@@ -354,6 +355,10 @@ body {
 .h1 {
   display: inline-block;
    font-size: 2rem;
+}
+
+.h1--center {
+  text-align: center
 }
 
 .h2 {
