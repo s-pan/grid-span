@@ -372,7 +372,11 @@ a {
 
 .h2 {
   display: inline-block;
-   font-size:2rem;
+  font-size:2rem;
+}
+
+.h2--black{
+  color:#000712;
 }
 
 .h3 {
@@ -397,4 +401,9 @@ a {
   background: inherit;
   border: 1px solid #f1f1f1;
   color: #f1f1f1;
+}
+
+.block{
+   background-color: #f1f1f1;
+  padding: 10px
 }
