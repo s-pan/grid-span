@@ -380,11 +380,12 @@ body {
 
 .btn{
   display: inline-block;
-	text-align:center;
+  text-align:center;
+  padding:5px 10px;
 	cursor: pointer;
 }
 
-.btn-ghost{
+.btn--ghost{
   background: inherit;
   border: 1px solid #f1f1f1
 }

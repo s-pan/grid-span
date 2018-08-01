@@ -1,6 +1,5 @@
 @import 'config';
 
-
 .grid-container {
   display: -ms-grid;
   display: grid;
@@ -26,7 +25,7 @@
   align-items: end; }
 
 
-@for $i from 1 to $grid-cell {
+@for $i from 1 to $grid-cell + 1 {
     .grid-#{$i} {
       -ms-grid-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
       grid-template-columns: repeat($i, 1fr);
@@ -36,14 +35,14 @@
 }
 
 @media (max-width: 767px)  {
-  @for $i from 1 to $grid-cell {
+  @for $i from 1 to $grid-cell + 1 {
     .col-xs-#{$i} {
        grid-column: $i;
     }
   }
 
-  @for $i from 1 to $grid-cell {
-    @for $j from $i + 1 to $grid-cell {
+  @for $i from 1 to $grid-cell + 1 {
+    @for $j from $i + 1 to $grid-cell + 1 {
       .col-xs-#{$i}-#{$j} {
          grid-column: #{$i} / #{$j + 1}
       }
@@ -52,14 +51,14 @@
 }
 
 @media (min-width: 768px) and (max-width: 992px)  {
-  @for $i from 1 to $grid-cell {
+  @for $i from 1 to $grid-cell + 1 {
     .col-sm-#{$i} {
        grid-column: $i
     }
   }
 
-  @for $i from 1 to $grid-cell {
-    @for $j from $i + 1 to $grid-cell {
+  @for $i from 1 to $grid-cell + 1 {
+    @for $j from $i + 1 to $grid-cell + 1 {
       .col-sm-#{$i}-#{$j} {
          grid-column: #{$i} / #{$j + 1}
       }
@@ -68,14 +67,14 @@
 }
 
 @media (min-width: 992px) and (max-width: 1200px){
-  @for $i from 1 to $grid-cell {
+  @for $i from 1 to $grid-cell + 1 {
     .col-md-#{$i} {
        grid-column: $i
     }
   }
 
-  @for $i from 1 to $grid-cell {
-    @for $j from $i + 1 to $grid-cell {
+  @for $i from 1 to $grid-cell + 1 {
+    @for $j from $i + 1 to $grid-cell + 1 {
       .col-md-#{$i}-#{$j} {
          grid-column: #{$i} / #{$j + 1}
       }
@@ -86,14 +85,14 @@
 
 
 @media (min-width: 1200px){
-  @for $i from 1 to $grid-cell {
+  @for $i from 1 to $grid-cell + 1 {
     .col-lg-#{$i} {
        -ms-grid-column: #{$i};
        grid-column: $i;
     }
   }
 
-  @for $i from 1 to $grid-cell {
+  @for $i from 1 to $grid-cell + 1{
     .col-lg-#{$i}-#{$i} {
       -ms-grid-column: #{$i};
       -ms-grid-column-span: #{$i};
@@ -101,8 +100,8 @@
     }
   }
 
-  @for $i from 1 to $grid-cell {
-    @for $j from $i  to $grid-cell {
+  @for $i from 1 to $grid-cell + 1 {
+    @for $j from $i  to $grid-cell + 1 {
       .col-lg-#{$i}-#{$j} {
         -ms-grid-column: #{$i};
         -ms-grid-column-span: #{$j - $i + 1};
