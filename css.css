@@ -359,7 +359,7 @@ a {
 
 .h1 {
   display: inline-block;
-   font-size: 2rem;
+   font-size: 2.4rem;
 }
 
 .jumbo{
@@ -372,13 +372,12 @@ a {
 
 .h2 {
   display: inline-block;
-   font-size:1.4rem;
-  
+   font-size:2rem;
 }
 
-.h4 {
+.h3 {
   display: inline-block;
-  font-size:1rem;
+  font-size:1.8rem;
 }
 
 .col {
