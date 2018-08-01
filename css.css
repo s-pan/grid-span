@@ -341,7 +341,7 @@ template {
 }
 
 body {
-   background-color: #f2e2dd;
+   background-color: #fff;
    height:100%;
   font-family: 'Roboto', 'Helvetica', 'Verdana', 'Arial';
 }
@@ -407,4 +407,8 @@ a {
   background-color: #f1f1f1;
   padding: 10px;
   margin: 5px 0;
+}
+
+.text-info{
+  text-align: center
 }
