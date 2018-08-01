@@ -361,3 +361,7 @@ body {
    font-size:1.4rem;
   
 }
+
+.col {
+   border: 1p solid #000;
+}
