@@ -343,7 +343,7 @@ template {
 body {
    background-color: #f2e2dd;
    height:100%;
-  font-family: 'Helvetica', 'Verdana', 'Arial';
+  font-family: 'Roboto', 'Helvetica', 'Verdana', 'Arial';
 }
 
 .header{
@@ -376,4 +376,15 @@ body {
    border: 1px solid #000;
    padding: 1rem;
    margin: 5px;
+}
+
+.btn{
+  display: inline-block;
+	text-align:center;
+	cursor: pointer;
+}
+
+.btn-ghost{
+  background: inherit;
+  border: 1px solid #f1f1f1
 }
